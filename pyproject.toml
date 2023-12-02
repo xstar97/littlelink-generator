@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "littlelink-generator"
+version = "0.1.1"
+description = "Littlelink Generator"
+authors = ["Xstar97 <dev.xstar97@gmail.com>"]
+maintainers  = ["Xstar97 <dev.xstar97@gmail.com>"]
+readme = "README.md"
+
+homepage = "https://pypi.org/project/littlelink-generator"
+repository = "https://github.com/xstar97/littlelink-generator"
+documentation = "https://github.com/xstar97/littlelink-generator"
+
+keywords = ["littlelink-generator"]
+
+classifiers = [
+    "Operating System :: MacOS",
+    "Operating System :: Microsoft",
+    "Operating System :: Unix",
+    "Operating System :: POSIX"
+]
+
+[tool.poetry.dependencies]
+python = "^3.9.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+littlelink = 'littlelink.generate:main'
